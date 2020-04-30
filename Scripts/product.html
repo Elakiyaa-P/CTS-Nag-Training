@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuple</title>
+    <style>
+        h1 {
+            font-size: 50px;
+            text-align: center;
+            background-color: rgb(109, 255, 255);
+            text-decoration: bisque;
+            color: rgb(253, 66, 160);
+        }
+
+        .button {
+            padding: 15px 25px;
+            font-size: 24px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: #fff;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+        }
+
+        #Add:hover {
+            background-color: lawngreen;
+        }
+
+        #Add:active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+
+        #Delete:hover{
+            background-color: red;
+        }
+
+        #Delete:active{
+            background-color:orangered;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+
+        #layout {
+            text-align: justify;
+        }
+
+        .customer {
+            font-size: 30px;
+            max-width: 600px;
+            margin: auto;
+            margin-top: 15%;
+            border-radius: 5px;
+            background-color:lightgreen;
+            padding: 25px;
+        }
+        .text{
+            width: 200px;
+            height:25px;
+        }
+    </style>
+</head>
+
+<body style="background-color: lemonchiffon;">
+    <h1> Product Detail </h1>
+    <script src="tuple.js"></script>
+    <div class="customer">
+        <div id="layout">
+            First Name: <input type="text" id='X' class="text" /><br> <br>
+            Last Name: <input type="text" id='Y' class="text" /><br> <br>
+            Age&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <input type="number" id='age' class="text" /><br>
+            <br>
+            Phone No&nbsp;&nbsp;: <input type="number" id="phn" class="text" /><br> <br>
+            Address&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <input type="textarea" id="address" class="text"/><br>
+        </div>
+        <br /><br>
+        <div class="Buttons">
+            <button id="Add" class="button" onclick="push()">ADD</button>&nbsp;&nbsp;&nbsp;&nbsp;
+            <button id="Delete" class="button" onclick="pop()">DELETE</button>
+        </div>
+        <br />
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,436 @@
+<html>
+<head>
+ <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>offical webpage</title>
+<style>
+.column1{
+float: left;
+width:20%;
+padding:10px 10px;
+height:20%;
+margin : 10px 10px;
+
+
+}
+.row1:after{
+content: "";
+display: table;
+clear:both;
+}
+</style>
+
+</head>
+
+<body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a  class="navbar-brand" href="#"><img src="image.jpg" width="150" height="100"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+	<li class="nav-item active">
+        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Product<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">customer</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Usecase</a>
+        
+      </li>
+      </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+	  <button class="btn btn-outline-success my-2 my-sm-0" style="margin-right:16px" type="submit"><a href="sample5.html">login</button></a>
+	    <button class="btn btn-outline-success my-2 my-sm-0" style="margin-right:16px" type="submit"><a href="sample6.html">signin</button></a>
+    </form>
+  </div>
+</nav>
+<ul class="nav flex-column">
+  <li class="nav-item">
+    <a class="nav-link active" href="tags.html">Tags</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="user.html">user</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="jobs.html">jobs</a>
+  
+  </ul>
+
+<center>
+<p id="users">
+<h1>Users</h1>
+<input   id="myInput" onkeyup="filterFunction()"  class="s-input s-input__search h100" autocomplete="off" name="tagfilter" type="text" maxlength="35" placeholder="Filter by tag name" autofocus="">
+<div class="row1">
+                
+                <div class="column1  user-hover">
+                    <div class="user-gravatar48">
+                        <a href="/users/2901002/jezrael"><div class="gravatar-wrapper-48"><img src="https://i.stack.imgur.com/hMDvl.jpg?s=96&amp;g=1" alt="" width="48" height="48" class="bar-sm"></div></a>
+                    </div>
+                    <div class="user-details">
+                        <a href="/users/2901002/jezrael">jezrael</a>
+                        <span class="user-location">Bratislava, Slovakia</span>
+                        <div class="-flair">
+                            <span class="reputation-score" title="reputation this week: 640 total reputation: 468,378" dir="ltr">640</span>
+                        </div>
+                    </div>
+                    <div class="user-tags">
+                        <a href="/questions/tagged/pandas">pandas</a>, <a href="/questions/tagged/python">python</a>, <a href="/questions/tagged/dataframe">dataframe</a>
+                    </div>
+                </div>
+                <div class="column1  user-hover">
+                    <div class="user-gravatar48">
+                        <a href="/users/1144035/gordon-linoff"><div class="gravatar-wrapper-48"><img src="https://www.gravatar.com/avatar/e514b017977ebf742a418cac697d8996?s=96&amp;d=identicon&amp;r=PG" alt="" width="48" height="48" class="bar-sm"></div></a>
+                    </div>
+                    <div class="user-details">
+                        <a href="/users/1144035/gordon-linoff">Gordon Linoff</a>
+                        <span class="user-location">New York, United States</span>
+                        <div class="-flair">
+                            <span class="reputation-score" title="reputation this week: 570 total reputation: 916,674" dir="ltr">570</span>
+                        </div>
+                    </div>
+                    <div class="user-tags">
+                        <a href="/questions/tagged/sql">sql</a>, <a href="/questions/tagged/sql-server">sql-server</a>, <a href="/questions/tagged/mysql">mysql</a>
+                    </div>
+                </div>
+				</div>
+				<div class="row1">
+                <div class="column1">
+                    <div class="user-gravatar48">
+                        <a href="/users/549372/martin-zeitler"><div class="gravatar-wrapper-48"><img src="https://www.gravatar.com/avatar/cc12ae5f4b59645f0fbfde098c306756?s=96&amp;d=identicon&amp;r=PG&amp;f=1" alt="" width="48" height="48" class="bar-sm"></div></a>
+                    </div>
+                    <div class="user-details">
+                        <a href="/users/549372/martin-zeitler">Martin Zeitler</a>
+                        <span class="user-location">Bavaria</span>
+                        <div class="-flair">
+                            <span class="reputation-score" title="reputation this week: 530 total reputation: 33,505" dir="ltr">530</span>
+                        </div>
+                    </div>
+                    <div class="user-tags">
+                        <a href="/questions/tagged/android">android</a>, <a href="/questions/tagged/gradle">gradle</a>, <a href="/questions/tagged/java">java</a>
+                    </div>
+                </div>
+                <div class="column1  user-hover">
+                    <div class="user-gravatar48">
+                        <a href="/users/2299040/sahil-manchanda"><div class="gravatar-wrapper-48"><img src="https://i.stack.imgur.com/Zjrmw.jpg?s=96&amp;g=1" alt="" width="48" height="48" class="bar-sm"></div></a>
+                    </div>
+                    <div class="user-details">
+                        <a href="/users/2299040/sahil-manchanda">Sahil Manchanda</a>
+                        <span class="user-location">Ludhiana, Punjab, India</span>
+                        <div class="-flair">
+                            <span class="reputation-score" title="reputation this week: 515 total reputation: 7,310" dir="ltr">515</span>
+                        </div>
+                    </div>
+                    <div class="user-tags">
+                        <a href="/questions/tagged/swift">swift</a>, <a href="/questions/tagged/android">android</a>, <a href="/questions/tagged/ios">ios</a>
+                    </div>
+                </div>
+               
+				<div class="row1">
+                <div class="column1 ">
+                    <div class="user-gravatar48">
+                        <a href="/users/9870014/jeeves"><div class="gravatar-wrapper-48"><img src="https://www.gravatar.com/avatar/1e0968e5e93653f89f56fda8722b0ff8?s=96&amp;d=identicon&amp;r=PG&amp;f=1" alt="" width="48" height="48" class="bar-sm"></div></a>
+                    </div>
+					
+                    <div class="user-details">
+                        <a href="/users/9870014/jeeves">jeeves</a>
+                        <span class="user-location"></span>
+                        <div class="-flair">
+                            <span class="reputation-score" title="reputation this week: 500 total reputation: 990" dir="ltr">500</span>
+                        </div>
+                    </div>
+                    <div class="user-tags">
+                        <a href="/questions/tagged/javascript">javascript</a>, <a href="/questions/tagged/node.js">node.js</a>, <a href="/questions/tagged/bull.js">bull.js</a>
+                    </div>
+                </div>
+				</div>
+				
+                <div class="column1  user-hover">
+                    <div class="user-gravatar48">
+                        <a href="/users/3732271/akrun"><div class="gravatar-wrapper-48"><img src="https://www.gravatar.com/avatar/ee6e12042dc31b1ef27471482f9ff91f?s=96&amp;d=identicon&amp;r=PG&amp;f=1" alt="" width="48" height="48" class="bar-sm"></div></a>
+                    </div>
+                    <div class="user-details">
+                        <a href="/users/3732271/akrun">akrun</a>
+                        <span class="user-location"></span>
+                        <div class="-flair">
+                            <span class="reputation-score" title="reputation this week: 431 total reputation: 516,138" dir="ltr">431</span>
+                        </div>
+                    </div>
+                    <div class="user-tags">
+                        <a href="/questions/tagged/r">r</a>, <a href="/questions/tagged/dplyr">dplyr</a>, <a href="/questions/tagged/dataframe">dataframe</a>
+                    </div>
+                </div>
+                <div class="column1  user-hover">
+                    <div class="user-gravatar48">
+                        <a href="/users/9473764/nick"><div class="gravatar-wrapper-48"><img src="https://www.gravatar.com/avatar/a1a6d80ec4ac5549a392ae88fb0ed688?s=96&amp;d=identicon&amp;r=PG&amp;f=1" alt="" width="48" height="48" class="bar-sm"></div></a>
+                    </div>
+                    <div class="user-details">
+                        <a href="/users/9473764/nick">Nick</a>
+                        <span class="user-location">Adelaide SA, Australia</span>
+                        <div class="-flair">
+                            <span class="reputation-score" title="reputation this week: 423 total reputation: 77,420" dir="ltr">423</span>
+                        </div>
+                    </div>
+                    <div class="user-tags">
+                        <a href="/questions/tagged/php">php</a>, <a href="/questions/tagged/mysql">mysql</a>, <a href="/questions/tagged/sql">sql</a>
+                    </div>
+                </div>
+                <div class="column1  user-hover">
+                    <div class="user-gravatar48">
+                        <a href="/users/9515207/certainperformance"><div class="gravatar-wrapper-48"><img src="https://www.gravatar.com/avatar/34932d3e923ffad9a4a1423e30b1d9fc?s=96&amp;d=identicon&amp;r=PG&amp;f=1" alt="" width="48" height="48" class="bar-sm"></div></a>
+                    </div>
+                    <div class="user-details">
+                        <a href="/users/9515207/certainperformance">CertainPerformance</a>
+                        <span class="user-location">Austin, TX, USA</span>
+                        <div class="-flair">
+                            <span class="reputation-score" title="reputation this week: 420 total reputation: 163,126" dir="ltr">420</span>
+                        </div>
+                    </div>
+                    <div class="user-tags">
+                        <a href="/questions/tagged/javascript">javascript</a>, <a href="/questions/tagged/arrays">arrays</a>, <a href="/questions/tagged/jquery">jquery</a>
+                    </div>
+                </div>
+				</div>
+				<div class="row1">
+                <div class="column1  user-hover">
+                    <div class="user-gravatar48">
+                        <a href="/users/22656/jon-skeet"><div class="gravatar-wrapper-48"><img src="https://www.gravatar.com/avatar/6d8ebb117e8d83d74ea95fbdd0f87e13?s=96&amp;d=identicon&amp;r=PG" alt="" width="48" height="48" class="bar-sm"></div></a>
+                    </div>
+                    <div class="user-details">
+                        <a href="/users/22656/jon-skeet">Jon Skeet</a>
+                        <span class="user-location">Reading, United Kingdom</span>
+                        <div class="-flair">
+                            <span class="reputation-score" title="reputation this week: 400 total reputation: 1,164,035" dir="ltr">400</span>
+                        </div>
+                    </div>
+                    <div class="user-tags">
+                        <a href="/questions/tagged/c%23">c#</a>, <a href="/questions/tagged/java">java</a>, <a href="/questions/tagged/.net">.net</a>
+                    </div>
+                </div>
+                <div class="column1  user-hover">
+                    <div class="user-gravatar48">
+                        <a href="/users/6309/vonc"><div class="gravatar-wrapper-48"><img src="https://www.gravatar.com/avatar/7aa22372b695ed2b26052c340f9097eb?s=96&amp;d=identicon&amp;r=PG" alt="" width="48" height="48" class="bar-sm"></div></a>
+                    </div>
+                    <div class="user-details">
+                        <a href="/users/6309/vonc">VonC</a>
+                        <span class="user-location">France</span>
+                        <div class="-flair">
+                            <span class="reputation-score" title="reputation this week: 375 total reputation: 930,245" dir="ltr">375</span>
+                        </div>
+                    </div>
+                    <div class="user-tags">
+                        <a href="/questions/tagged/git">git</a>, <a href="/questions/tagged/github">github</a>, <a href="/questions/tagged/eclipse">eclipse</a>
+                    </div>
+                </div>
+                <div class="column1  user-hover">
+                    <div class="user-gravatar48">
+                        <a href="/users/100297/martijn-pieters"><div class="gravatar-wrapper-48"><img src="https://www.gravatar.com/avatar/24780fb6df85a943c7aea0402c843737?s=96&amp;d=identicon&amp;r=PG" alt="" width="48" height="48" class="bar-sm"></div></a>
+                    </div>
+                    <div class="user-details">
+                        <a href="/users/100297/martijn-pieters">Martijn Pieters</a><span class="mod-flair" title="moderator">♦</span>
+                        <span class="user-location">Cambridge, UK</span>
+                        <div class="-flair">
+                            <span class="reputation-score" title="reputation this week: 350 total reputation: 792,976" dir="ltr">350</span>
+                        </div>
+                    </div>
+                    <div class="user-tags">
+                        <a href="/questions/tagged/python">python</a>, <a href="/questions/tagged/python-3.x">python-3.x</a>, <a href="/questions/tagged/python-2.7">python-2.7</a>
+                    </div>
+                </div>
+				</div>
+				
+				<div class="row1">
+                <div class="column1"  user-hover">
+                    <div class="user-gravatar48">
+                        <a href="/users/2871640/tommymaynard"><div class="gravatar-wrapper-48"><img src="https://www.gravatar.com/avatar/93ea6ad3878467447d47c2effef4e778?s=96&amp;d=identicon&amp;r=PG&amp;f=1" alt="" width="48" height="48" class="bar-sm"></div></a>
+                    </div>
+                    <div class="user-details">
+                        <a href="/users/2871640/tommymaynard">tommymaynard</a>
+                        <span class="user-location"></span>
+                        <div class="-flair">
+                            <span class="reputation-score" title="reputation this week: 300 total reputation: 1,286" dir="ltr">300</span>
+                        </div>
+                    </div>
+                    <div class="user-tags">
+                        <a href="/questions/tagged/powershell">powershell</a>, <a href="/questions/tagged/windows">windows</a>, <a href="/questions/tagged/command-prompt">command-prompt</a>
+                    </div>
+                </div>
+                <div class="column1"  user-hover>
+                    <div class="user-gravatar48">
+                        <a href="/users/209103/frank-van-puffelen"><div class="gravatar-wrapper-48"><img src="https://www.gravatar.com/avatar/12d378e6a9788ab9c94bbafe242b82b4?s=96&amp;d=identicon&amp;r=PG" alt="" width="48" height="48" class="bar-sm"></div></a>
+                    </div>
+                    <div class="user-details">
+                        <a href="/users/209103/frank-van-puffelen">Frank van Puffelen</a>
+                        <span class="user-location">San Francisco, CA</span>
+                        <div class="-flair">
+                            <span class="reputation-score" title="reputation this week: 288 total reputation: 304,977" dir="ltr">288</span>
+                        </div>
+                    </div>
+                    <div class="user-tags">
+                        <a href="/questions/tagged/firebase">firebase</a>, <a href="/questions/tagged/firebase-realtime-database">firebase-realtime-database</a>, <a href="/questions/tagged/android">android</a>
+                    </div>
+                </div>
+                <div class="column1"  user-hover">
+                    <div class="user-gravatar48">
+                        <a href="/users/217408/g%c3%bcnter-z%c3%b6chbauer"><div class="gravatar-wrapper-48"><img src="https://i.stack.imgur.com/IlnZm.jpg?s=96&amp;g=1" alt="" width="48" height="48" class="bar-sm"></div></a>
+                    </div>
+                    <div class="user-details">
+                        <a href="/users/217408/g%c3%bcnter-z%c3%b6chbauer">Günter Zöchbauer</a>
+                        <span class="user-location">Linz, Austria</span>
+                        <div class="-flair">
+                            <span class="reputation-score" title="reputation this week: 280 total reputation: 398,181" dir="ltr">280</span>
+                        </div>
+                    </div>
+                    <div class="user-tags">
+                        <a href="/questions/tagged/angular">angular</a>, <a href="/questions/tagged/typescript">typescript</a>, <a href="/questions/tagged/dart">dart</a>
+                    </div>
+                </div>
+				</div>
+				<div class="row1">
+                <div class="column1"  user-hover>
+                    <div class="user-gravatar48">
+                        <a href="/users/6622587/eyllanesc"><div class="gravatar-wrapper-48"><img src="https://i.stack.imgur.com/gAYS0.jpg?s=96&amp;g=1" alt="" width="48" height="48" class="bar-sm"></div></a>
+                    </div>
+                    <div class="user-details">
+                        <a href="/users/6622587/eyllanesc">eyllanesc</a>
+                        <span class="user-location">Peru</span>
+                        <div class="-flair">
+                            <span class="reputation-score" title="reputation this week: 280 total reputation: 129,938" dir="ltr">280</span>
+                        </div>
+                    </div>
+                    <div class="user-tags">
+                        <a href="/questions/tagged/python">python</a>, <a href="/questions/tagged/pyqt">pyqt</a>, <a href="/questions/tagged/pyqt5">pyqt5</a>
+                    </div>
+                </div>
+                <div class="column1 ">
+                    <div class="user-gravatar48">
+                        <a href="/users/10377254/jacob"><div class="gravatar-wrapper-48"><img src="https://www.gravatar.com/avatar/6de929dea37932b01f76d2f512dcff1a?s=96&amp;d=identicon&amp;r=PG&amp;f=1" alt="" width="48" height="48" class="bar-sm"></div></a>
+                    </div>
+                    <div class="user-details">
+                        <a href="/users/10377254/jacob">Jacob</a>
+                        <span class="user-location">New Zealand</span>
+                        <div class="-flair">
+                            <span class="reputation-score" title="reputation this week: 270 total reputation: 572" dir="ltr">270</span>
+                        </div>
+                    </div>
+                    <div class="user-tags">
+                        <a href="/questions/tagged/javascript">javascript</a>, <a href="/questions/tagged/reactjs">reactjs</a>, <a href="/questions/tagged/c">c</a>
+                    </div>
+                </div>
+                <div class="column1 user-hover">
+                    <div class="user-gravatar48">
+                        <a href="/users/1221571/eran"><div class="gravatar-wrapper-48"><img src="https://i.stack.imgur.com/GLKUy.jpg?s=96&amp;g=1" alt="" width="48" height="48" class="bar-sm"></div></a>
+                    </div>
+                    <div class="user-details">
+                        <a href="/users/1221571/eran">Eran</a>
+                        <span class="user-location">Israel</span>
+                        <div class="-flair">
+                            <span class="reputation-score" title="reputation this week: 263 total reputation: 326,847" dir="ltr">263</span>
+                        </div>
+                    </div>
+                    <div class="user-tags">
+                        <a href="/questions/tagged/java">java</a>, <a href="/questions/tagged/java-8">java-8</a>, <a href="/questions/tagged/java-stream">java-stream</a>
+                    </div>
+                </div>
+				</div>
+				<div class="row1">
+                <div class="column1  user-hover">
+                    <div class="user-gravatar48">
+                        <a href="/users/174777/john-rotenstein"><div class="gravatar-wrapper-48"><img src="https://i.stack.imgur.com/6PnNW.jpg?s=96&amp;g=1" alt="" width="48" height="48" class="bar-sm"></div></a>
+                    </div>
+                    <div class="user-details">
+                        <a href="/users/174777/john-rotenstein">John Rotenstein</a>
+                        <span class="user-location">Sydney, Australia</span>
+                        <div class="-flair">
+                            <span class="reputation-score" title="reputation this week: 260 total reputation: 112,726" dir="ltr">260</span>
+                        </div>
+                    </div>
+                    <div class="user-tags">
+                        <a href="/questions/tagged/amazon-web-services">amazon-web-services</a>, <a href="/questions/tagged/amazon-s3">amazon-s3</a>, <a href="/questions/tagged/amazon-ec2">amazon-ec2</a>
+                    </div>
+                </div>
+                <div class="column1  user-hover">
+                    <div class="user-gravatar48">
+                        <a href="/users/893/greg-hewgill"><div class="gravatar-wrapper-48"><img src="https://www.gravatar.com/avatar/747ffa5da3538e66840ebc0548b8fd58?s=96&amp;d=identicon&amp;r=PG" alt="" width="48" height="48" class="bar-sm"></div></a>
+                    </div>
+                    <div class="user-details">
+                        <a href="/users/893/greg-hewgill">Greg Hewgill</a>
+                        <span class="user-location">Christchurch, New Zealand</span>
+                        <div class="-flair">
+                            <span class="reputation-score" title="reputation this week: 250 total reputation: 741,490" dir="ltr">250</span>
+                        </div>
+                    </div>
+                    <div class="user-tags">
+                        <a href="/questions/tagged/git">git</a>, <a href="/questions/tagged/python">python</a>, <a href="/questions/tagged/version-control">version-control</a>
+                    </div>
+                </div>
+               
+				<div class="row1">
+                <div class="column1  user-hover">
+                    <div class="user-gravatar48">
+                        <a href="/users/190597/unutbu"><div class="gravatar-wrapper-48"><img src="https://www.gravatar.com/avatar/aabc98d5c6482ca0e1405ec97710f30a?s=96&amp;d=identicon&amp;r=PG&amp;f=1" alt="" width="48" height="48" class="bar-sm"></div></a>
+                    </div>
+                    <div class="user-details">
+                        <a href="/users/190597/unutbu">unutbu</a>
+                        <span class="user-location"></span>
+                        <div class="-flair">
+                            <span class="reputation-score" title="reputation this week: 260 total reputation: 621,587" dir="ltr">260</span>
+                        </div>
+                    </div>
+                    <div class="user-tags">
+                        <a href="/questions/tagged/python">python</a>, <a href="/questions/tagged/pandas">pandas</a>, <a href="/questions/tagged/numpy">numpy</a>
+                    </div>
+                </div>
+               
+				<div class="row1">
+                
+                <div class="column1  user-hover">
+                    <div class="user-gravatar48">
+                        <a href="/users/3681880/suragch"><div class="gravatar-wrapper-48"><img src="https://www.gravatar.com/avatar/3b7ad8915f552cd4e23caf38eee10030?s=96&amp;d=identicon&amp;r=PG" alt="" width="48" height="48" class="bar-sm"></div></a>
+                    </div>
+                    <div class="user-details">
+                        <a href="/users/3681880/suragch">Suragch</a>
+                        <span class="user-location"></span>
+                        <div class="-flair">
+                            <span class="reputation-score" title="reputation this week: 240 total reputation: 276,675" dir="ltr">240</span>
+                        </div>
+                    </div>
+                    <div class="user-tags">
+                        <a href="/questions/tagged/android">android</a>, <a href="/questions/tagged/ios">ios</a>, <a href="/questions/tagged/swift">swift</a>
+                    </div>
+                </div>
+                <div class="column1 ">
+                    <div class="user-gravatar48">
+                        <a href="/users/11082165/brian"><div class="gravatar-wrapper-48"><img src="https://www.gravatar.com/avatar/4b73f08b7fb69386c5dc56497ff2ca58?s=96&amp;d=identicon&amp;r=PG&amp;f=1" alt="" width="48" height="48" class="bar-sm"></div></a>
+                    </div>
+                    <div class="user-details">
+                        <a href="/users/11082165/brian">Brian</a>
+                        <span class="user-location"></span>
+                        <div class="-flair">
+                            <span class="reputation-score" title="reputation this week: 230 total reputation: 543" dir="ltr">230</span>
+                        </div>
+                    </div>
+                    <div class="user-tags">
+                        <a href="/questions/tagged/python">python</a>, <a href="/questions/tagged/python-3.x">python-3.x</a>, <a href="/questions/tagged/c">c</a>
+                    </div>
+                </div>
+				</div>
+				
+        </div>
+</p>
+</center>
+</body>
+</html>

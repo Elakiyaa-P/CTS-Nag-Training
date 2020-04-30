@@ -1,0 +1,38 @@
+SPA (Single Page Application)
+
+A single-page application (SPA) is a web application or website 
+that interacts with the web browser by dynamically rewriting the 
+current web page with new data from the web server, instead of the 
+default method of the browser loading entire new pages.
+Eg: Gmail,Facebook,Google Maps,Git Hub
+
+PWA (Progressive Web Application)
+
+Progressive Web Apps (PWAs) are web applications that are regular
+web pages or websites, but can appear to the user like traditional
+applications or native mobile applications. The application type
+attempts to combine features offered by most modern browsers with 
+the benefits of a mobile experience.
+Eg:Forbes: Forbes, a global media company, turned to Progressive Web Apps
+for their new mobile experience in order to improve loading times for their readers.
+Flipkart,
+Alibaba,
+The Weather Channel, 
+The Washington Post.
+
+Hybrid Apps
+
+The native app is created for a particular platform either Android or iOS,
+whereas the hybrid development process relies on cross-platform functioning. 
+That is to say, native apps are built on programming languages which can be 
+supported only by a certain platform.
+Eg: Hybrid apps are developed using HTML, CSS and Javascript,
+and then wrapped in a native application using platforms like Cordova.(Ionic APP)
+
+AMP:
+
+AMP (Accelerated Mobile Pages) is an open source project 
+initiative which aims to improve the performance of the mobile web.
+
+
+

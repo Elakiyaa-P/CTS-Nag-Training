@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title> Login page </title>
+    </head>
+    <body>
+        <h1> User Registration Form </h1>
+        <form name="Registration Form" action="duplicate">
+            <label for="username">UserName: </label>
+            <input type="text" name="uname" id="username" value="Elite"><br><br>
+
+            <label for="pw">Password:</label>
+            <input type="password" name="pw" id="pw"><br><br>
+
+            <label for="mail">Email id:</label>
+            <input type="email" name="mail" id="mail"><br><br>
+
+            <label for="ugen">Gender:</label>
+            <input type="radio" name="gen" id="ugen" value="Male">Male
+            <input type="radio" name="gen" id="ugen" value="Female">Female<br><br>
+
+            <label for="lang">Languages Known:</label>
+            <input type="checkbox" name="lang" id="lang" value="Eng">English
+            <input type="checkbox" name="lang" id="lang" value="Tam">Tamil
+            <input type="checkbox" name="lang" id="lang" value="Hin">Hindi
+            <input type="checkbox" name="lang" id="lang" value="Fre">French<br><br>
+
+            <label for="location">Prefered Location:</label>
+            <select name="loc" id="location">
+                <option> Select any Location</option>
+                <option value="1"> Chennai </option>
+                <option value="2"> Kolkatta </option>
+                <option value="3"> Bangalore </option>
+                <option value="4"> Hyderabad </option>
+                <option value="5"> Assam </option>
+            </select><br><br>
+
+            <label for="uadd">Residential Address:</label>
+            <textarea cols="25" rows="5" name="uadd" id="uadd"></textarea><br><br>
+            
+            <input type="submit" value="Register">
+            <input type="reset" value="Reset">
+        </form>
+    </body>
+</html>

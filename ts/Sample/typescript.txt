@@ -1,0 +1,43 @@
+TypeScript
+
+What is TypeScript?
+
+Superset of JavaScript developed by microsoft
+Transpiles to plain JavaScript
+Easily integrated into JavaScript projects
+Designed for development of large applications
+
+What does TypeScript offer?
+
+Static type checking
+Class based objects
+Modularity
+ES6+ features
+Syntax closer to Java and other high level languages
+
+Class based objects:
+
+Object oriented programming in JS
+No prototypes
+Encapsulation
+Inheritance
+Modifiers (public, protected, private)
+
+class Greeter {
+    greeting: string;
+    constructor(message: string) {
+        this.greeting = message;
+    }
+    greet() {
+        return "Hello, " + this.greeting;
+    }
+}
+
+let greeter = new Greeter("world");
+
+TypeScript Compiler (tsc):
+
+Written in TypeScript
+Compiles .ts files to .js
+Installed as an NPM package
+Supports ES6+ syntax

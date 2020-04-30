@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <title>Form</title>
+    <style>
+        .content {
+            max-width: 500px;
+            margin: auto;
+            margin-top: 15%;
+            border-radius: 5px;
+            background-color: #a59e7a;
+            padding: 25px;
+        }
+        
+        .submit {
+            display: block;
+            width: 100px;
+            margin: 10px auto;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        h2 {
+            text-align: justify;
+        }
+    </style>
+    <script src="swe_valid.js"></script>
+</head>
+
+<body>
+    <form>
+        <div class="content">
+            <h1>Forms</h1>
+            <h2> UserName:<input type="email" id="user" onblur="validateEmail(this);" /><br><br></h2>
+            <h2> PassWord:<input type="password" id="pass" onblur="CheckPassword(this)" /><br><br></h2>
+            <h2>PhNumber:<input type="number" id="phone"><br><br></h2>
+            <h2>Gender:<select id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+
+            </select><br><br></h2>
+            <input type="checkbox" name="check" value="check">Terms And Conditions<br><br>
+            <button type="submit" class="submit" value="Submit">Submit</button>
+        </div>
+    </form>

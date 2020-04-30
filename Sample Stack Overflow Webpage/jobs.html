@@ -1,0 +1,256 @@
+<html>
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<style>
+  hr.new4 {
+  border: 1px solid orange;
+}
+.log{
+margin-left:500px;
+}
+.vl {
+  border-left: 2px solid black;
+  height: 5000px;
+  position: absolute;
+  left: 10%;
+  margin-left: 10px;
+  top: 15;
+}
+.ver{
+margin-left:100px;
+
+}
+.rows{
+height:10;
+}
+
+.job{
+margin-left:250px;
+bottom:100px;
+}
+.user{
+margin-left:250px;
+bottom:100px;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 20%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+.button {
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+.button:hover {
+  background-color: #f1f1f1;
+}
+
+.center {
+  margin-right:50px;;
+  width: 60%;
+  border: solid black;
+  padding: 10px;
+}
+</style>
+</head>
+<body>
+<hr class="new4">
+<ul class="nav justify-content-center" style=margin-left:80px;>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  
+  <a class="navbar-brand" href="#">
+    <img src="6.jpg" alt="logo" style="width:200px;">
+  </a>
+  
+  
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#"><strong>Products</strong></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"><strong>Customers</strong></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"><strong>UseCases</strong></a>
+    </li>
+	 <form class="form-inline" action="/action_page.php">
+    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+    <button class="btn btn-success" type="submit">Search</button>
+  </form>
+  <div class="log">
+   <button type="button" class="btn btn-info"><a href="18.Bootstrap reg form.html">Login</a></button>&nbsp; <button type="button" class="btn btn-info"><a href="15.Bootstrap form validtaion">Signup</a></button>
+  </div>
+  </ul>
+  </ul>
+  <div class="vl"></div>
+</nav>
+<div class="rows">
+<div class="ver">
+ <ul class="navbar-nav">
+  <li class="nav-item">
+      <a class="nav-link" href="stackoverflow.html"><font color="black">stackoverflow</font></a>
+    </li>
+	 <li class="nav-item">
+      <a class="nav-link" href="tags.html"><font color="black">Tags</font></a>
+    </li>
+	
+    <li class="nav-item">
+      <a class="nav-link" href="users.html"><font color="black">Users</font></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="jobs.html"><font color="black">Jobs</font></a>
+    </li>
+  </ul>
+</div>
+</div>
+<body>
+<div class="job">
+<h1><strong>Developers First.</strong></h1>
+<button class="button">Jobs</button>
+<button class="button">Companies</button>
+<button class="button">Why Jobs?</button>
+<button class="button">Developer story</button>
+ <form class="form-inline" action="/action_page.php">
+    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+    <button class="btn btn-info" type="submit">Search</button>
+  </form>
+  <hr color="solid orange">
+  <div class="center">
+  <p><b><u>Web Developer</u> </b><br>Wah celebration<br>Chennai<br>India</p><img src="1.jpg">
+</div>
+<hr color="solid orange">
+  <div class="center">
+  <p><b><u>Front end web Developer-Angular</u> </b><br>Xenovex Technologies Pvt Ltd <br>Chennai<br>India</p><img src="2.jpg">
+</div>
+<hr>
+  <div class="center">
+  <p><b><u>Web Designer and Developer</u> </b><br>Robin and Robin Health Care Pvt Ltd <br>Chennai<br>India</p><img src="3.jpg">
+</div>
+<hr color="solid orange">
+  <div class="center">
+  <p><b><u>Web Developer-PHP</u> </b><br>WebCrafters<br>Chennai<br>India</p><img src="4.jpg">
+</div>
+<hr color="solid orange">
+  <div class="center">
+  <p><b><u>PHP Developer</u> </b><br>BLEUMING TECHNOLOGIES<br>Chennai<br>India</p><img src="5.jpg">
+</div>
+
+<hr>
+</body>
+</html>
+
+
+

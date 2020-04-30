@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation Form</title>
+    <script>
+        alert("HI");
+
+        function validate() {
+            var name = document.myForm.un.value;
+            var email = document.myForm.email.value;
+            // var atpos=email.indexOf("@");
+            // var dotpos=email.lastIndexOf(".")
+            var password = document.myForm.pw1.value;
+            var confirm = document.myForm.pw2.value;
+            var number = document.myForm.num.value;
+            var gender = document.myForm.gender.value;
+            var condn = document.myForm.terms.value;
+
+            var vname = /^[a-z A-Z]+$/;
+            var vemail = /^[a-zA-Z0-9]+@[a-z]{3,5}.[a-z]{3}$/
+            var vpass = /^[a-zA-Z0-9]+$/
+
+            if (name == NULL || name == " ") {
+                alert("Name can't be blank!");
+                return false;
+            }
+            if (vname.test(name) == false) {
+                alert("Username should be in alphabets!")
+            }
+            if (vemail.test(email) == false) {
+                alert("Invalid Email id!!")
+            }
+            if (password.length < 8) {
+                alert("Password must be atleast 8 characters");
+                return false;
+            }
+            if (vpass.test(password) == false) {
+                alert("Password must be in Alphanumeric!!!")
+            }
+            if (password != confirm) {
+                alert("Password must be same");
+                return false;
+            }
+            if (isNAN(num)) {
+                alert("Enter Numeric value only!!")
+                return false
+            }
+            if (number.length != 10) {
+                alert("Enter 10 digit Phone Number")
+            }
+            if (gender[0] == false && gender[1] == false) {
+                alert("Select a male of a female")
+            }
+            if (condn.checked == false) {
+                alert("You must agree to the terms and conditions!!!")
+            }
+        }
+    </script>
+</head>
+
+<body style="text-align:center; background-color:mistyrose;">
+    <script src=""></script>
+    <h1 style="color:blueviolet"> Form Validation</h1>
+    <form name="myForm" onsubmit="validate()" method="post">
+        UserName:
+        <input type="text" placeholder="UserName" name="un" required><br><br> Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:
+        <input type="text" name="email" placeholder="Email id" required><br><br> Password&nbsp;:
+        <input type="password" placeholder="Password" name="pw1" required><br><br>
+        <!-- Confirm Password:
+        <input type="password" placeholder="Confirm Password" name="pw2" required><br><br>  -->
+        Phone&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:
+        <input type="text" placeholder="Number in Digits" name="num" required><br><br> Gender:&nbsp;&nbsp;&nbsp;
+        <select name="gender">
+            <option value=" ">Select any one</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select> <br><br> Terms and Conditions:
+        <input type="checkbox" name="terms" required><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
