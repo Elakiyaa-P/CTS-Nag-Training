@@ -6,7 +6,8 @@ let normalFunc = function() {
     console.log(this)
 }
 normalFunc();
+
 //Sample Arrow function
-let arrowFunc = () =>
-    console.log(this)
-arrowFunc();
+// let arrowFunc = () =>
+//     console.log(this)
+// arrowFunc();
